@@ -20,7 +20,7 @@ app.get('/api', (req, res) => {
     // response
     const response = {
         'slack_name': myName,
-        'current_utc_time': currentUtcTime,
+        'utc_time': currentUtcTime,
         'track': myTrack,
         'github_file_url': githubUrlFile,
         'github_repo_url': githubUrlRepo,
