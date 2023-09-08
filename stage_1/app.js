@@ -11,7 +11,7 @@ app.get('/api', (req, res) => {
 
     // to get the current day and time 
     const currentDayOfWeek = new Date().toLocaleDateString('en-US', { weekday: 'long'});
-    const currentUtcTime = new Date().toISOString();
+    const currentUtcTime = new Date().toISOString().slice(0, -5) + 'Z';
 
     // For github urls
     const githubUrlFile = 'https://github.com/stephenobi720/HNG_Projects/blob/main/stage_1/app.js';
